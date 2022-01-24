@@ -1,5 +1,21 @@
-import 'package:udemy_dart/udemy_dart.dart' as udemy_dart;
+import 'package:test/test.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${udemy_dart.calculate()}!');
+  var x = 'hello world';
+  print(x);
+
+  const pi = 3.14;
+  print(pi);
+
+  final horasDoDia = 24;
+  print(horasDoDia);
+
+  bool isTrue = true;
+  print(isTrue);
+
+  int isInt = 10;
+  print(isInt);
+
+  double isDouble = 10.5;
+  print(isDouble);
 }
