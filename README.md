@@ -1,2 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+Este repositório tem o propósito de registrar meu desenvolvimento na linguagem dart
+====
+
