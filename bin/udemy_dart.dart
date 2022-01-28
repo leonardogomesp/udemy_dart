@@ -9,16 +9,15 @@ class Microphone {
     name = 'Solocast';
     color = 'Grey';
   }
+
+  String get getName => name;
+  set setName(String value) => name = value;
 }
 
 void main() {
   var mic = Microphone('Quadcast', 'Red', 1889);
-  var micDois = Microphone.initialize();
 
-  print(mic.name);
-  print(mic.color);
-  print(mic.model);
-  print('                   ');
-  print(micDois.name);
-  print(micDois.color);
+  mic.setName = 'Mic';
+
+  print(mic.getName);
 }
