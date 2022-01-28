@@ -1,21 +1,15 @@
-import 'package:test/test.dart';
+class Microphone {
+  String name;
+  String color;
+  int model;
 
-void main(List<String> arguments) {
-  var x = 'hello world';
-  print(x);
+  Microphone(this.name, this.color, this.model);
+}
 
-  const pi = 3.14;
-  print(pi);
+void main() {
+  var mic = Microphone('Quadcast', 'Red', 1889);
 
-  final horasDoDia = 24;
-  print(horasDoDia);
-
-  bool isTrue = true;
-  print(isTrue);
-
-  int isInt = 10;
-  print(isInt);
-
-  double isDouble = 10.5;
-  print(isDouble);
+  print(mic.name);
+  print(mic.color);
+  print(mic.model);
 }
