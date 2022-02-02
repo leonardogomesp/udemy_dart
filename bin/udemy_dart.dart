@@ -1,23 +1,29 @@
-class Microphone {
-  late String name;
-  late String color;
-  late int model;
+class Pessoa {
+  late String nome, sobreNome, nacionalidade, corDoCabelo;
+  late int idade;
+}
 
-  Microphone(this.name, this.color, this.model);
+class Leonardo extends Pessoa {
+  late String profissao;
 
-  Microphone.initialize() {
-    name = 'Solocast';
-    color = 'Grey';
+  void showBasicInfos() {
+    print(this.nome);
+    print(this.sobreNome);
+    print(this.nacionalidade);
+    print(this.corDoCabelo);
+    print(this.idade);
+    print(this.profissao);
   }
-
-  String get getName => name;
-  set setName(String value) => name = value;
 }
 
 void main() {
-  var mic = Microphone('Quadcast', 'Red', 1889);
+  var leonardo = new Leonardo();
+  leonardo.nome = 'Leonardo';
+  leonardo.sobreNome = 'Gomes';
+  leonardo.nacionalidade = 'Brasileiro';
+  leonardo.corDoCabelo = 'Castanho';
+  leonardo.idade = 19;
+  leonardo.profissao = 'Dev';
 
-  mic.setName = 'Mic';
-
-  print(mic.getName);
+  leonardo.showBasicInfos();
 }
